@@ -318,7 +318,7 @@ export default function HomePage() {
           }}
           submitText="Send Inquiry"
           successText="Thank you. We will respond within 24 business hours."
-          cardTitle="Schedule a Creative Call"
+          cardTitle="Start an Email Inquiry"
           cta={{
             text: "Email Us Directly",
             href: "mailto:hello@studiovale.com"
