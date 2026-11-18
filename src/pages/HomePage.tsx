@@ -52,7 +52,7 @@ export default function HomePage() {
 
       <div id="services" data-webild-section="FeaturesToolStackList" data-webild-section-id="FeaturesToolStackList-1" data-section="services">
         <FeaturesToolStackList
-          titleQuiet="Bespoke studio"
+          titleQuiet="Studio Vale"
           title="Digital design with editorial poise"
           toolsLabel="Studio design stack"
           tools={[
