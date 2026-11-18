@@ -8,7 +8,6 @@ export default function Layout() {
       <header data-webild-section="Header">
         <NavbarPillCollapse
           brand="Studio Vale"
-          avatarSrc="https://images.pexels.com/photos/8727530/pexels-photo-8727530.jpeg?auto=compress&w=400"
           navItems={[
             {
               name: "Services",
