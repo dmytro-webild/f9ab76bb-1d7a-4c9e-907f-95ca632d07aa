@@ -101,9 +101,9 @@ export default function HomePage() {
               href: "#pricing"
             },
             {
-              title: "Digital Publications & Media",
-              description: "Editorial projects and digital publications designed for screen.",
-              icon: "BookOpen",
+              title: "Design Aesthetics & Direction",
+              description: "Curated visual styles and bespoke editorial direction tailored to your brand.",
+              icon: "Palette",
               href: "#work"
             }
           ]}
@@ -112,56 +112,59 @@ export default function HomePage() {
 
       <div id="work" data-webild-section="GalleryCardHandGrid" data-webild-section-id="GalleryCardHandGrid-1" data-section="work" data-scene data-gallery>
         <GalleryCardHandGrid
-          titleQuiet="Our work"
-          title="Selected concepts"
+          titleQuiet="Design aesthetics"
+          title="Select your visual direction"
           items={[
             {
-              title: "Architectural Studio",
-              category: "Architecture Design",
+              title: "Neoclassical Minimal",
+              category: "Architectural & Monolithic",
+              description: "Structured layouts, high-contrast typography, generous whitespace, and sculptural form.",
               imageSrc: "https://img.b2bpic.net/free-photo/rendering-elegant-neoclassical-interior_23-2151059663.jpg",
-              imageAlt: "Rendering of elegant neoclassical interior",
+              imageAlt: "Neoclassical Minimal design aesthetic with structured architectural geometry",
               href: "#contact-booking-card"
             },
             {
-              title: "Editorial Magazine",
-              category: "Editorial Publication",
+              title: "Warm Editorial",
+              category: "Publication & Serif Accent",
+              description: "Tactile print textures, elegant serif accents, warm neutral tones, and storytelling grid systems.",
               imageSrc: "https://img.b2bpic.net/free-photo/elegant-desk-composition-flat-lay_23-2148975801.jpg",
-              imageAlt: "elegant desk stationery composition",
+              imageAlt: "Warm Editorial design aesthetic with tactile print layout elements",
               href: "#contact-booking-card"
             },
             {
-              title: "Artisan Goods",
-              category: "Artisan E-Commerce",
+              title: "Artisan Organic",
+              category: "Natural & Earthy Tones",
+              description: "Soothing neutral palettes, organic geometries, warm soft lighting, and grounded material textures.",
               imageSrc: "https://img.b2bpic.net/free-photo/modern-entranceway-with-furniture-home-decor_23-2150831957.jpg",
-              imageAlt: "Modern entranceway with furniture and home decor",
+              imageAlt: "Artisan Organic design aesthetic with natural materials and soft earth tones",
               href: "#contact-booking-card"
             },
             {
-              title: "Boutique Advisory",
-              category: "Consulting Services",
+              title: "Executive Luxury",
+              category: "Refined & Precision",
+              description: "Deep charcoal tones, sharp alignment, subtle metallic borders, and quiet corporate authority.",
               imageSrc: "https://img.b2bpic.net/free-photo/desktop-with-laptop-mobile-phone_23-2148128807.jpg",
-              imageAlt: "Desktop with laptop and mobile phone",
+              imageAlt: "Executive Luxury design aesthetic with high-precision layout",
               href: "#contact-booking-card"
             },
             {
-              title: "Design Atelier",
-              category: "Spatial Atelier",
+              title: "Avant-Garde Spatial",
+              category: "Contemporary & Dynamic",
+              description: "Ambient light fields, fluid spatial proportions, smooth motion curves, and a curated gallery atmosphere.",
               imageSrc: "https://img.b2bpic.net/free-photo/ai-generated-modern-styled-entryway_23-2150692187.jpg",
-              imageAlt: "Ai generated of modern styled entryway",
+              imageAlt: "Avant-Garde Spatial design aesthetic with contemporary gallery feeling",
               href: "#contact-booking-card"
             },
             {
-              title: "Digital Gallery",
-              category: "Digital Portfolio",
+              title: "Curated Gallery",
+              category: "Monochrome & Exhibition",
+              description: "Exhibition-inspired frames, monospaced details, monochrome depth, and stark typographic rhythm.",
               imageSrc: "https://img.b2bpic.net/free-photo/high-angle-desk-concept-with-copy-space_23-2148459729.jpg",
-              imageAlt: "desk with laptop and decor",
+              imageAlt: "Curated Gallery design aesthetic with monochrome exhibition framing",
               href: "#contact-booking-card"
             }
           ]}
-          viewAll={{
-            text: "Explore all work",
-            href: "#contact-booking-card"
-          }}
+          itemLinkText="Select aesthetic"
         />
       </div>
 

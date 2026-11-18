@@ -36,6 +36,7 @@ type Geo = { top: number; height: number; poses: Pose[] };
 type GalleryItem = {
   title: string;
   category?: string;
+  description?: string;
   imageSrc: string;
   imageAlt?: string;
   href?: string;
@@ -60,7 +61,7 @@ type CardProps = {
   settled: boolean;
   smooth: MotionValue<number>;
   geo: MotionValue<Geo>;
-  linkText: string;
+  linkText?: string;
   cellRef: (el: HTMLDivElement | null) => void;
 };
 
@@ -102,8 +103,9 @@ const Card = ({ item, index, count, fly, intro, settled, smooth, geo, linkText, 
         <div className="flex min-w-0 flex-col gap-1">
           <h3 className="text-[length:var(--text-body-lg)] font-medium leading-[1.3] tracking-[-0.02em] [overflow-wrap:anywhere]">{item.title}</h3>
           {item.category && <p className="text-[length:var(--text-label)] font-semibold leading-[1.2] text-muted-foreground">{item.category}</p>}
+          {item.description && <p className="mt-1 text-[length:var(--text-small)] text-muted-foreground leading-relaxed">{item.description}</p>}
         </div>
-        {item.href && (
+        {item.href && linkText && (
           <div className="mt-1 flex shrink-0 items-center gap-1 opacity-70 transition-opacity duration-300 group-hover:opacity-100">
             <ArrowUpRight aria-hidden="true" className="size-3.5" strokeWidth={1.75} />
             <p className="whitespace-nowrap text-[length:var(--text-label)] font-semibold leading-[1.2]">{linkText}</p>
@@ -135,7 +137,7 @@ const Card = ({ item, index, count, fly, intro, settled, smooth, geo, linkText, 
   );
 };
 
-const GalleryCardHandGrid = ({ titleQuiet, title, items, itemLinkText = "View project", viewAll, ariaLabel, className }: GalleryCardHandGridProps) => {
+const GalleryCardHandGrid = ({ titleQuiet, title, items, itemLinkText, viewAll, ariaLabel, className }: GalleryCardHandGridProps) => {
   const sectionRef = useRef<HTMLElement>(null);
   const cellRefs = useRef<(HTMLDivElement | null)[]>([]);
   usePreloadImages(sectionRef, "150%");
