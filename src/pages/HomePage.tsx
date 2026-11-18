@@ -309,6 +309,7 @@ export default function HomePage() {
 
       <div id="contact-booking-card" data-webild-section="ContactBookingCard" data-webild-section-id="ContactBookingCard-1" data-section="contact-booking-card">
         <ContactBookingCard
+          imageSrc="https://storage.googleapis.com/webild/users/user_3M4rHGr5dDJ5OueHFd3FpeiHQjG/uploaded-1795032716214-j5vfkpy8.png"
           title="Let's Build Something Elegant"
           fields={{
             name: "Full Name",
