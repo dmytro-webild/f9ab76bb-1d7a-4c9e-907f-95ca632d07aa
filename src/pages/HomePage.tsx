@@ -11,8 +11,8 @@ export default function HomePage() {
   return (
     <>
       <LaunchfolioLoader
-        name="Jacob Morales"
-        role="Creative Director"
+        name="Studio Vale"
+        role="Boutique Studio"
       />
 
       <div id="home" data-webild-section="HeroCardHand" data-webild-section-id="HeroCardHand-1" data-section="home" data-scene>
