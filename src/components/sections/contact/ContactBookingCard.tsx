@@ -42,7 +42,7 @@ const ContactBookingCard = ({
   cardTitle = "Book a call",
   cardDescription,
   cta = { text: "Pick a time", href: "#contact" },
-  imageSrc = "https://images.pexels.com/photos/8727530/pexels-photo-8727530.jpeg?auto=compress&w=800",
+  imageSrc,
   imageAlt = "",
   ariaLabel,
   className,
@@ -144,12 +144,17 @@ const ContactBookingCard = ({
             transition={{ duration: slow, ease, delay: 0.15 }}
             className="kit-card flex min-w-0 flex-col items-start p-[clamp(1.5rem,2.6vw,2rem)]"
           >
-            <Media src={imageSrc} alt={imageAlt} loading="lazy" decoding="async" className="size-16 shrink-0 rounded-full object-cover" />
+            {imageSrc && (
+              <Media src={imageSrc} alt={imageAlt} loading="lazy" decoding="async" className="size-16 shrink-0 rounded-full object-cover" />
+            )}
             <LaunchfolioTwoTone
               as="h3"
               quiet={cardQuiet}
               strong={cardTitle}
-              className="mt-[clamp(1.5rem,3vw,2.5rem)] text-[length:var(--text-h3)] leading-[1.15] tracking-[var(--heading-tracking)] [font-weight:var(--heading-weight)]"
+              className={cn(
+                "text-[length:var(--text-h3)] leading-[1.15] tracking-[var(--heading-tracking)] [font-weight:var(--heading-weight)]",
+                imageSrc && "mt-[clamp(1.5rem,3vw,2.5rem)]"
+              )}
             />
             {cardDescription && (
               <p className="mt-4 max-w-[26rem] text-[length:var(--text-small)] leading-[1.6] text-muted-foreground [overflow-wrap:anywhere]">{cardDescription}</p>
