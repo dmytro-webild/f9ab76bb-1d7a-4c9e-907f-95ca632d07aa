@@ -1,6 +1,6 @@
 import { useId, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { CalendarCheck } from "lucide-react";
+import { Mail } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { useKitMotion, usePreloadImages } from "@/components/kit/kitMotion";
@@ -41,7 +41,7 @@ const ContactBookingCard = ({
   cardQuiet,
   cardTitle = "Book a call",
   cardDescription,
-  cta = { text: "Pick a time", href: "#contact" },
+  cta = { text: "StudioValeDesign@gmail.com", href: "mailto:StudioValeDesign@gmail.com" },
   imageSrc,
   imageAlt = "",
   ariaLabel,
@@ -161,7 +161,7 @@ const ContactBookingCard = ({
             )}
             <div className="mt-auto w-full pt-[clamp(1.75rem,3vw,2.5rem)]">
               <a href={cta.href} className="btn-primary w-full sm:w-auto">
-                <CalendarCheck aria-hidden="true" className="size-4 shrink-0" strokeWidth={2} />
+                <Mail aria-hidden="true" className="size-4 shrink-0" strokeWidth={2} />
                 {cta.text}
               </a>
             </div>

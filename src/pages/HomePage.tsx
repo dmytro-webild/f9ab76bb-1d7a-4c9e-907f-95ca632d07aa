@@ -320,8 +320,8 @@ export default function HomePage() {
           successText="Thank you. We will respond within 24 business hours."
           cardTitle="Start an Email Inquiry"
           cta={{
-            text: "Email Us Directly",
-            href: "mailto:hello@studiovale.com"
+            text: "StudioValeDesign@gmail.com",
+            href: "mailto:StudioValeDesign@gmail.com"
           }}
         />
       </div>

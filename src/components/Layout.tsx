@@ -48,29 +48,11 @@ export default function Layout() {
           contacts={[
             {
               label: "Email",
-              text: "hello@studiovale.com",
-              href: "mailto:hello@studiovale.com"
-            },
-            {
-              label: "Call",
-              text: "+1 (415) 890-1234",
-              href: "tel:+14158901234"
+              text: "StudioValeDesign@gmail.com",
+              href: "mailto:StudioValeDesign@gmail.com"
             }
           ]}
-          socials={[
-            {
-              text: "Instagram",
-              href: "#"
-            },
-            {
-              text: "Behance",
-              href: "#"
-            },
-            {
-              text: "Dribbble",
-              href: "#"
-            }
-          ]}
+          socials={[]}
           links={[
             {
               text: "Services",
