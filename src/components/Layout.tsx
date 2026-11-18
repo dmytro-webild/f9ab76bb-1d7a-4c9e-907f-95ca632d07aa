@@ -77,7 +77,7 @@ export default function Layout() {
               href: "#services"
             },
             {
-              text: "Portfolio",
+              text: "Aesthetics",
               href: "#work"
             },
             {
