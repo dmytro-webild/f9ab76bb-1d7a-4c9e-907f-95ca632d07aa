@@ -1,0 +1,10 @@
+src/components/Layout.tsx
+src/components/sections/contact/ContactBookingCard.tsx
+src/components/sections/features/FeaturesToolStackList.tsx
+src/components/sections/features/ProcessPillSteps.tsx
+src/components/sections/footer/FooterCycleWordmark.tsx
+src/components/sections/gallery/GalleryCardHandGrid.tsx
+src/components/sections/hero/HeroCardHand.tsx
+src/components/sections/pricing/PricingTiltedCard.tsx
+src/components/sections/testimonial/TestimonialQuoteGrid.tsx
+src/pages/HomePage.tsx
