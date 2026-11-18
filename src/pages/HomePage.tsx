@@ -319,6 +319,7 @@ export default function HomePage() {
           submitText="Send Inquiry"
           successText="Thank you. We will respond within 24 business hours."
           cardTitle="Start an Email Inquiry"
+          recipientEmail="StudioValeDesign@gmail.com"
           cta={{
             text: "StudioValeDesign@gmail.com",
             href: "mailto:StudioValeDesign@gmail.com"

@@ -19,6 +19,7 @@ type ContactBookingCardProps = {
   submitText?: string;
   successText?: string;
   onSubmit?: (data: ContactData) => void;
+  recipientEmail?: string;
   cardQuiet?: string;
   cardTitle?: string;
   cardDescription?: string;
@@ -38,6 +39,7 @@ const ContactBookingCard = ({
   submitText = "Send message",
   successText = "Thank you, I will be in touch soon.",
   onSubmit,
+  recipientEmail = "StudioValeDesign@gmail.com",
   cardQuiet,
   cardTitle = "Book a call",
   cardDescription,
@@ -58,7 +60,16 @@ const ContactBookingCard = ({
   const onSend = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    onSubmit?.({ name: String(data.get("name") ?? ""), email: String(data.get("email") ?? ""), message: String(data.get("message") ?? "") });
+    const name = String(data.get("name") ?? "");
+    const email = String(data.get("email") ?? "");
+    const message = String(data.get("message") ?? "");
+
+    onSubmit?.({ name, email, message });
+
+    const mailtoSubject = encodeURIComponent(`Inquiry from ${name}`);
+    const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+    window.location.href = `mailto:${recipientEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
+
     setSent(true);
   };
 
